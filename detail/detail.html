@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Detail</title>
+
+    <style>
+      *, body{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+      }
+      
+    </style>
+
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand sticky-top bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand text-dark fs-4 fw-bold" href="#">Mahir Academy</a>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul  class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a href="#" type="button" class="btn btn-light nav-link" aria-current="page">
+                <p class="fw-bolder ">Home</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" type="button" class="btn btn-light nav-link" aria-current="page">
+                <p class="fw-bolder">Venue</p>
+              </a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="#">
+                <button type="button" class="btn btn-light position-relative">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#!">Profil</a></li>
+                  <li><a class="dropdown-item" href="#!">Settings</a></li>
+                  <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#!">Logout</a></li>
+              </ul>
+          </li>
+          </ul>
+          
+        </div>
+      </div>
+
+  </nav>
+  <!-- end navbar -->
+
+ 
+
+    <div class="container ">
+        <div class="row align-items-start">
+          <div class="col-md-6 g-col-4">
+
+            <!-- bagian detail pengguna -->
+            <div class="p-2 mb-4  border border-dark rounded">
+              <h4>Invoice</h4>
+              <a href="" class="text-dark" style="text-decoration-line: none;">
+                <p class="fw-bold">Nama</p>
+                <p class="text-bolder">Faisal</p>
+                <p class="fw-bold">Jenis Lapangan</p>
+                <p class="text-bolder">Lapangan Sintetis 1</p>
+                <p class="fw-bold">Tanggal</p>
+                <p class="text-bolder">2024-06-25</p>
+                <p class="fw-bold">Waktu Booking</p>
+                <p class="text-bolder">20.00 - 22.00</p>
+                <p class="fw-bold">Total Pembayaran</p>
+                <p class="text-bolder">Rp 250.000</p>
+                <p class="fw-bold">No Rekening</p>
+                <p class="text-bolder">021878262825282628 (BRI)</p>
+              </a>
+            </div>
+           
+          </div>
+          <div class="col-md-6 g-col-4">
+            <div class="container mb-3">
+              <div>
+              <!-- Bagian form Input nama tim -->
+
+                <form action="">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nama Tim</label>
+                    <input type="text" class="form-control  border border-dark">
+                  </div>
+                  <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label ">Note</label>
+                      <textarea class="form-control  border border-dark" id="exampleFormControlTextarea1" rows="6"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileMultiple" class="form-label">Upload Bukti Pemabayaran</label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li>Lakukan Pembayaran Sebelum h-1</li>
+            <li>Jika sudah melakukan transaksi kemudian bukti tranfer disini</li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn-primary d-block"  data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Submit</a>
+    </div>
+  </div>
+<!-- bagian mokeup Pemberitahuan -->
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <i class="fa-solid fa-check fw-bolder fs-3" style="color: #1623d8;"></i>
+          <p>Tunggu 3 menit admin setelah admin menginformasi pembayaran</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- akhiran bagian mokeup Pemberitahuan -->
+
+
+
+
+
+    <!-- footer -->
+    <footer class="pt-4 mt-auto ">
+        <div class="d-flex align-items-center justify-content-between small bg-primary p-3">
+            <div class="text-light ">Copyright &copy; Futsal Web</div>
+            <div>
+                <a href="#" class="text-light"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-light"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" class="text-light"><i class="fa-brands fa-youtube"></i></a>
+                &middot;
+                <a href="#" class="text-light">MahirAcademy &amp; Conditions</a>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <!-- end footer -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
